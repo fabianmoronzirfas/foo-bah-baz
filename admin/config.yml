@@ -8,14 +8,15 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "pages"
+  - name: "sub_pages"
     label: "Pages"
-    folder: "_pages"
+    folder: "_sub_pages"
     create: false
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden" }
       - {label: "Body", name: "body", widget: "markdown" }
+
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "_posts/blog" # The path to the folder where the documents are stored
